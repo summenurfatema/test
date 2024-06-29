@@ -12,17 +12,17 @@ dotenv.config();
 // app.use(cors());
 const port = process.env.PORT || 3000;
 
-export const db = async () => {
-  try {
-    await mongoose.connect(process.env.MONGO_URI);
+// export const db = async () => {
+//   try {
+//     await mongoose.connect(process.env.MONGO_URI);
 
-    console.log("🚀 Database connected successfully");
+//     console.log("🚀 Database connected successfully");
     
     
-  } catch (err) {
-    console.log("Failed to connect database", err);
-  }
-}
+//   } catch (err) {
+//     console.log("Failed to connect database", err);
+//   }
+// }
 
 
 
@@ -36,4 +36,4 @@ app.listen(port, () => {
 
 
 
-db();
+// db();

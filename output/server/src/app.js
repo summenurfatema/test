@@ -10,8 +10,7 @@ app.use(express.json({ limit: bodyParserLimit }));
 app.use(express.urlencoded({ extended: true, limit: bodyParserLimit }));
 
 const apiKey =
-  process.env.OPENAI_API_KEY ||
-  "sk-proj-fQhN9DHDlKqn5M2UnQ7mT3BlbkFJm2f9lsol8w5IC1hKgqas";
+  process.env.OPENAI_API_KEY
 
 app.get("/", (req, res) => {
   res.send("Server is Listening..");
